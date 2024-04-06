@@ -15,11 +15,8 @@
 
 <body style='background-color: #FBFBFB;'>
 	<div id='main-container'>
-		<div class='header'>
-			<div class="header-box wrapper">
-				<div class="hd-logo"><a href="#"><img src="img/logo.png" alt="Logo"/></a></div>
-			</div>
-		</div>
+        <img src="img/logo.png" class="img-responsive" alt="Logo" />
+        <hr>
 
 		<div class="span12">
 			<h4> PHPNuxBill  Installer </h4>
@@ -59,6 +56,11 @@
 					<div class="form-group">
 						<label for="dbname">Database Name</label>
 						<input type="text" class="form-control" id="dbname" name="dbname">
+					</div>
+
+                    <div class="form-group">
+						<label for="dbname"><input type="checkbox" class="form-control" id="radius" name="radius" value="yes"> Install Radius Table?</label>
+
 					</div>
 
 					<button type="submit" class="btn btn-primary">Submit</button>

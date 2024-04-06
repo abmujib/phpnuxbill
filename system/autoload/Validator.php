@@ -1,8 +1,10 @@
 <?php
 
 /**
- * PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
+ *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
+ *  by https://t.me/ibnux
  **/
+
 
 /**
  * Validator class
@@ -18,7 +20,7 @@ class Validator
      * @param array $hits
      * @return void
      */
-    private static function textHit($string, $exclude = "")
+    public static function textHit($string, $exclude = "")
     {
         if (empty($exclude)) return false;
         if (is_array($exclude)) {
@@ -297,6 +299,25 @@ class Validator
         );
         $format = trim(preg_replace("/[0-9]/", "#", $phone));
         return (bool)in_array($format, $formats);
+    }
+
+    public static function countRouterPlan($plans, $router){
+        $n = 0;
+        foreach ($plans as $plan){
+            if($plan['routers'] == $router){
+                $n++;
+            }
+        }
+        return $n;
+    }
+
+    public static function isRouterHasPlan($plans, $router){
+        foreach ($plans as $plan){
+            if($plan['routers'] == $router){
+                return true;
+            }
+        }
+        return false;
     }
 
 }

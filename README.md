@@ -1,3 +1,5 @@
+[![ReadMeSupportPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-project.svg)](https://s.id/standwithpalestine)
+
 # PHPNuxBill - PHP Mikrotik Billing
 
 ![PHPNuxBill](install/img/logo.png)
@@ -5,12 +7,15 @@
 ## Feature
 
 - Voucher Generator and Print
+- FreeRadius
 - Self registration
+- User Balance
+- Auto Renewal Package using Balance
 - Multi Router Mikrotik
 - Hotspot & PPPOE
 - Easy Installation
 - Multi Language
-- Payment Gateway Midtrans, Xendit and Tripay
+- Payment Gateway
 - SMS validation for login
 - Whatsapp Notification to Consumer
 - Telegram Notification for Admin
@@ -31,10 +36,12 @@ Most current web servers with PHP & MySQL installed will be capable of running P
 Minimum Requirements
 
 - Linux or Windows OS
-- PHP Version 7.2+
+- Minimum PHP Version 7.4
 - Both PDO & MySQLi Support
-- GD2 Image Library
-- CURL support
+- PHP-GD2 Image Library
+- PHP-CURL
+- PHP-ZIP
+- PHP-Mbstring
 - MySQL Version 4.1.x and above
 
 can be Installed in Raspberry Pi Device.
@@ -48,9 +55,13 @@ The problem with windows is hard to set cronjob, better Linux
 
 [Installation instructions](https://github.com/hotspotbilling/phpnuxbill/wiki)
 
-## RADIUS system
+## Docker Version
 
-Still on development
+[Docker Repository](https://github.com/animegasan/phpnuxbill)
+
+## Freeradius
+
+Support [Freeradius with Database](https://github.com/hotspotbilling/phpnuxbill/wiki/FreeRadius)
 
 ## Community Support
 

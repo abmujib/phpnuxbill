@@ -1,5 +1,8 @@
 {include file="sections/header.tpl"}
 
+<center><a href="https://s.id/standwithpalestine" target="_blank"><img src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-support.svg" class="img-responsive"></a></center>
+<br><br>
+
 <div class="row">
     <div class="col-sm-6">
         <div class="box box-hovered mb20 box-primary">
@@ -8,10 +11,13 @@
             </div>
             <div class="box-body">Get help from community</div>
             <div class="box-footer">
-            <a href="https://github.com/hotspotbilling/phpnuxbill/discussions" target="_blank"
-                class="btn btn-primary btn-lg btn-block"><i class="ion ion-chatboxes"></i> Github Discussions</a>
-                <a href="https://t.me/phpnuxbill" target="_blank"
-                    class="btn btn-primary btn-lg btn-block"><i class="ion ion-chatboxes"></i> Telegram Group</a>
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <a href="https://github.com/hotspotbilling/phpnuxbill/discussions" target="_blank"
+                        class="btn btn-primary btn-sm btn-block"><i class="ion ion-chatboxes"></i> Github
+                        Discussions</a>
+                    <a href="https://t.me/phpnuxbill" target="_blank" class="btn btn-primary btn-sm btn-block"><i
+                            class="ion ion-chatboxes"></i> Telegram Group</a>
+                </div>
             </div>
         </div>
     </div>
@@ -25,7 +31,7 @@
             </div>
             <div class="box-footer">
                 <a href="https://github.com/hotspotbilling/phpnuxbill/issues" target="_blank"
-                    class="btn btn-primary btn-lg btn-block"><i class="ion ion-chatboxes"></i> Give Feedback</a>
+                    class="btn btn-primary btn-sm btn-block"><i class="ion ion-chatboxes"></i> Give Feedback</a>
             </div>
         </div>
     </div>
@@ -58,10 +64,12 @@
                 </table>
             </div>
             <div class="box-footer">
-                <a href="https://trakteer.id/ibnux" target="_blank"
-                    class="btn btn-primary btn-lg btn-block">Trakteer</a>
-                <a href="https://karyakarsa.com/ibnux/support" target="_blank"
-                    class="btn btn-primary btn-lg btn-block">karyakarsa</a>
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <a href="https://trakteer.id/ibnux" target="_blank"
+                        class="btn btn-primary btn-sm btn-block">Trakteer</a>
+                    <a href="https://karyakarsa.com/ibnux/support" target="_blank"
+                        class="btn btn-primary btn-sm btn-block">karyakarsa</a>
+                </div>
             </div>
         </div>
     </div>
@@ -96,7 +104,12 @@
                 </table>
             </div>
             <div class="box-footer">
-                <a href="https://paypal.me/ibnux" target="_blank" class="btn btn-primary btn-lg btn-block">Paypal</a>
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <a href="https://paypal.me/ibnux" target="_blank"
+                        class="btn btn-primary btn-sm btn-block">Paypal</a>
+                    <a href="https://wise.com/pay/me/ibnum37" target="_blank"
+                        class="btn btn-primary btn-sm btn-block">Wise</a>
+                </div>
             </div>
         </div>
     </div>
@@ -107,30 +120,9 @@
             <div class="box-header">
                 <h3 class="box-title">Chat with me</h3>
             </div>
-            <div class="box-body">Paid Support?<br>donation confirmation?<br>Or ask any Donation Alternative</div>
+            <div class="box-body">$50 Paid Support<br>donation confirmation?<br>Or ask any Donation Alternative</div>
             <div class="box-footer">
-                <a href="https://t.me/ibnux" target="_blank" class="btn btn-primary btn-lg btn-block">Telegram</a>
-                <a href="https://twitter.com/messages/compose?recipient_id=20653807&text=Hello+i+am+phpnuxbill+user"
-                    target="_blank" class="btn btn-primary btn-lg btn-block">Twitter</a>
-                <a href="https://m.me/ibnumaksum" target="_blank" class="btn btn-primary btn-lg btn-block">Facebook
-                    Messenger</a>
-                <a href="https://keybase.io/ibnux" target="_blank" class="btn btn-primary btn-lg btn-block">Keybase</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="box box-primary box-hovered mb20 activities">
-            <div class="box-header">
-                <h3 class="box-title">PHPNUXBILL</h3>
-            </div>
-            <div class="box-body">
-                {$_L['Welcome_Text_Admin']}
-            </div>
-            <div class="box-footer" id="currentVersion">ver</div>
-            <div class="box-footer" id="latestVersion">ver</div>
-            <div class="box-footer">
-                <a href="https://github.com/hotspotbilling/phpnuxbill/" target="_blank"
-                    class="btn btn-primary btn-lg btn-block">Get Latest Version</a>
+                <a href="https://t.me/ibnux" target="_blank" class="btn btn-primary btn-sm btn-block">Telegram</a>
             </div>
         </div>
         <div class="box box-primary box-hovered mb20 activities">
@@ -142,7 +134,38 @@
             </div>
             <div class="box-footer">
                 <a href="https://wa.nux.my.id/login" target="_blank"
-                    class="btn btn-primary btn-lg btn-block">wa.nux.my.id</a>
+                    class="btn btn-primary btn-sm btn-block">wa.nux.my.id</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6" id="update">
+        <div class="box box-primary box-hovered mb20 activities">
+            <div class="box-header">
+                <h3 class="box-title">PHPNUXBILL</h3>
+            </div>
+            <div class="box-body">
+                <b>PHPNuxBill</b> is a billing Hotspot and PPPOE for Mikrotik using PHP and Mikrotik API to comunicate with router. If you get more profit with this application, please donate us.<br>Watch project <a href="https://github.com/hotspotbilling/phpnuxbill" target="_blank">in here</a>
+            </div>
+            <div class="box-footer" id="currentVersion">ver</div>
+            <div class="box-footer" id="latestVersion">ver</div>
+            <div class="box-footer">
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <a href="./update.php" class="btn btn-success btn-sm btn-block">Install Latest Version</a>
+                    <a href="https://github.com/hotspotbilling/phpnuxbill/archive/refs/heads/master.zip" target="_blank"
+                        class="btn btn-warning btn-sm btn-block">Download Latest Version</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <a href="./CHANGELOG.md" target="_blank" class="btn btn-default btn-sm btn-block">Current
+                        Changelog</a>
+                    <a href="https://github.com/hotspotbilling/phpnuxbill/blob/master/CHANGELOG.md" target="_blank"
+                        class="btn btn-default btn-sm btn-block">Repo Changelog</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                If you Download manual the update file, sometime update change database, after uploading, click this button to update database structure.
+                <a href="./update.php?step=4" class="btn btn-default btn-sm btn-block">Update Database</a>
             </div>
         </div>
     </div>

@@ -6,33 +6,33 @@
         <div class="invoice-wrap">
             <div class="clearfix invoice-head">
                 <h3 class="brand-logo text-uppercase text-bold left mt15">
-                    <span class="text">{$_L['Daily_Report']}</span>
+                    <span class="text">{Lang::T('Daily Reports')}</span>
                 </h3>
             </div>
             <div class="clearfix invoice-subhead mb20">
                 <div class="group clearfix left">
-                    <p class="text-bold mb5">{$_L['All_Transactions_at_Date']}:</p>
+                    <p class="text-bold mb5">{Lang::T('All Transactions at Date')}:</p>
                     <p class="small">{date($_c['date_format'], strtotime($mdate))} {$mtime}</p>
                 </div>
                 <div class="group clearfix right">
                     <a href="{$_url}export/print-by-date" class="btn btn-default" target="_blank"><i
-                            class="ion ion-printer"></i>{$_L['Export_for_Print']}</a>
+                            class="ion ion-printer"></i>{Lang::T('Export for Print')}</a>
                     <a href="{$_url}export/pdf-by-date" class="btn btn-default"><i
-                            class="fa fa-file-pdf-o"></i>{$_L['Export_to_PDF']}</a>
+                            class="fa fa-file-pdf-o"></i>{Lang::T('Export to PDF')}</a>
                 </div>
             </div>
             <div class="table-responsive">
                 <table class="table table-bordered table-condensed">
                     <thead>
                         <tr>
-                            <th>{$_L['Username']}</th>
-                            <th>{$_L['Type']}</th>
-                            <th>{$_L['Plan_Name']}</th>
-                            <th>{$_L['Plan_Price']}</th>
-                            <th>{$_L['Created_On']}</th>
-                            <th>{$_L['Expires_On']}</th>
-                            <th>{$_L['Method']}</th>
-                            <th>{$_L['Routers']}</th>
+                            <th>{Lang::T('Username')}</th>
+                            <th>{Lang::T('Type')}</th>
+                            <th>{Lang::T('Plan Name')}</th>
+                            <th>{Lang::T('Plan Price')}</th>
+                            <th>{Lang::T('Created On')}</th>
+                            <th>{Lang::T('Expires On')}</th>
+                            <th>{Lang::T('Method')}</th>
+                            <th>{Lang::T('Routers')}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,10 +41,9 @@
                                 <td>{$ds['username']}</td>
                                 <td>{$ds['type']}</td>
                                 <td>{$ds['plan_name']}</td>
-                                <td class="text-right">{$_c['currency_code']}
-                                    {number_format($ds['price'],2,$_c['dec_point'],$_c['thousands_sep'])}</td>
-                                <td>{date($_c['date_format'], strtotime($ds['recharged_on']))}</td>
-                                <td>{date($_c['date_format'], strtotime($ds['expiration']))} {$ds['time']}</td>
+                                <td class="text-right">{Lang::moneyFormat($ds['price'])}</td>
+                                <td>{Lang::dateAndTimeFormat($ds['recharged_on'],$ds['recharged_time'])}</td>
+                                <td>{Lang::dateAndTimeFormat($ds['expiration'],$ds['time'])}</td>
                                 <td>{$ds['method']}</td>
                                 <td>{$ds['routers']}</td>
                             </tr>
@@ -52,13 +51,13 @@
                     </tbody>
                 </table>
             </div>
-            {$paginator['contents']}
+            {include file="pagination.tpl"}
 
             <div class="clearfix text-right total-sum mb10">
-                <h4 class="text-uppercase text-bold">{$_L['Total_Income']}:</h4>
-                <h3 class="sum">{$_c['currency_code']} {number_format($dr,2,$_c['dec_point'],$_c['thousands_sep'])}</h3>
+                <h4 class="text-uppercase text-bold">{Lang::T('Total Income')}:</h4>
+                <h3 class="sum">{Lang::moneyFormat($dr)}</h3>
             </div>
-            <p class="text-center small text-info">{$_L['All_Transactions_at_Date']}:
+            <p class="text-center small text-info">{Lang::T('All Transactions at Date')}:
                 {date($_c['date_format'], strtotime($mdate))} {$mtime}</p>
         </div>
     </div>
